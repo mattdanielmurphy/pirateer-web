@@ -1,0 +1,27 @@
+#results {
+	margin-top: 1em;
+	.result {
+		font-size: $s-size;
+		div {
+			display: inline-block;
+			margin-right: 1em;
+			&.file-size {
+				width: 6em;
+			}
+			&.date {
+				width: 6em;
+			}
+			&.seeds {
+				text-align: right;
+				width: 2em;
+			}
+			&.name {
+				width: 40em;
+			}
+		}
+	}
+}
+
+#no-results {
+	margin-top: 1em;
+}

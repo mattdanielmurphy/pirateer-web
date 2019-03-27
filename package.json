@@ -1,32 +1,40 @@
 {
-  "name": "TEMPLATE",
-  "version": "1.0.0",
-  "main": "index.js",
-  "author": "Matthew Daniel Murphy",
-  "license": "MIT",
-  "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-core": "^6.26.3",
-    "babel-loader": "^7.1.4",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-react": "^6.24.1",
-    "css-loader": "^0.28.11",
-    "eslint": "^4.19.1",
-    "eslint-plugin-react": "^7.7.0",
-    "html-webpack-plugin": "^3.2.0",
-    "node-sass": "^4.9.0",
-    "normalize.css": "^8.0.0",
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2",
-    "react-router-dom": "^4.2.2",
-    "sass-loader": "^7.0.1",
-    "style-loader": "^0.21.0",
-    "webpack": "^4.8.1",
-    "webpack-cli": "^2.1.3",
-    "webpack-dev-server": "^3.1.4"
-  },
-  "scripts": {
-    "start": "webpack-dev-server --open --mode development",
-    "build": "webpack"
-  }
+	"name": "pirateer-web",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "Matthew Daniel Murphy",
+	"license": "MIT",
+	"devDependencies": {
+		"babel-cli": "^6.26.0",
+		"babel-core": "^6.26.3",
+		"babel-loader": "^7.1.4",
+		"babel-preset-env": "^1.7.0",
+		"babel-preset-react": "^6.24.1",
+		"css-loader": "^2.1.1",
+		"eslint": "^4.19.1",
+		"eslint-plugin-react": "^7.7.0",
+		"html-webpack-plugin": "^3.2.0",
+		"node-sass": "^4.11.0",
+		"normalize.css": "^8.0.0",
+		"react": "^16.3.2",
+		"react-dom": "^16.3.2",
+		"react-router-dom": "^4.2.2",
+		"sass-loader": "^7.0.1",
+		"style-loader": "^0.21.0",
+		"webpack": "^4.8.1",
+		"webpack-cli": "^3.3.0",
+		"webpack-dev-server": "^3.2.1"
+	},
+	"scripts": {
+		"start-dev-server": "webpack-dev-server --open --mode development",
+		"start-backend": "node src/backend/app.js",
+		"start": "concurrently \"yarn start-dev-server\" \"yarn start-backend\"",
+		"build": "webpack"
+	},
+	"dependencies": {
+		"babel-plugin-transform-class-properties": "^6.24.1",
+		"express": "^4.16.4",
+		"piratebay-search": "^1.0.1",
+		"socket.io-client": "^2.2.0"
+	}
 }

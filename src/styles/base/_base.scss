@@ -1,15 +1,33 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:500,500i,700,700i');
 
 html {
-  font-size: 62.5%;
+	font-size: 62.5%;
 }
 
 body {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  font-size: $m-size;
-  padding: $l-size;
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: $m-size;
+	padding: $l-size;
+}
+
+#title-input {
+	text-align: center;
+	input {
+		margin-right: 1em;
+	}
 }
 
 button {
-  cursor: pointer;
+	cursor: pointer;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		color: #ddd;
+		background-color: #222;
+	}
+	a {
+		color: rgba(2, 212, 240, 0.788);
+		text-decoration: none;
+	}
 }
