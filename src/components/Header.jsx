@@ -3,12 +3,13 @@ import { NavLink } from 'react-router-dom'
 
 const Header = () => (
 	<header>
-		<NavLink className="nav-link" to="/">
+		{/* <NavLink className="nav-link" to="/">
 			Movies
 		</NavLink>
 		<NavLink className="nav-link" to="/tv">
 			TV Shows
-		</NavLink>
+		</NavLink> */}
+		<h1>Pirateer</h1>
 	</header>
 )
 
