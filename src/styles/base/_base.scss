@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:500,500i,700,700i');
+@import 'https://fonts.googleapis.com/css?family=Open+Sans:500, 500i, 700, 700i';
 
 html {
 	font-size: 62.5%;
@@ -7,7 +7,6 @@ html {
 body {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: $m-size;
-	padding: $l-size;
 }
 
 #title-input {
@@ -25,6 +24,25 @@ button {
 	body {
 		color: #ddd;
 		background-color: #222;
+	}
+	input {
+		background-color: #444;
+		padding: .6em .6em .5em .6em;
+		margin: 2em 0;
+		color: $white;
+		&::placeholder {
+			color: #aaa;
+		}
+	}
+	button {
+		padding: .6em .6em .5em .6em;
+		background: #444;
+		color: $white;
+		border: 1px solid #444;
+		&:hover {
+			background: #666;
+			cursor: pointer;
+		}
 	}
 	a {
 		color: rgba(2, 212, 240, 0.788);
